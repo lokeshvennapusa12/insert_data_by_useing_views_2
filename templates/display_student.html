@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_student</title>
+</head>
+<body>
+    <center>
+        <h1>Display student</h1>
+        <table border="3px">
+            <tr>
+                <th >sname</th>
+                <th>srno</th>
+                <th>sadd</th>
+                <th>sage</th>
+                <th>smail</th>
+            </tr>
+            {% for i in student %}
+                <tr>
+                    <td align="center">{{ i.sname }}</td>
+                    <td align="center">{{ i.srno }}</td>
+                    <td align="center">{{ i.sadd }}</td>
+                    <td align="center">{{ i.sage }}</td>
+                    <td align="center">{{ i.smail }}</td>
+                </tr>
+            {% endfor %}   
+        </table>
+    </center>
+</body>
+</html>
